@@ -63,6 +63,11 @@ export const AuthProvider = ({ children }) => {
   const registerUser = async (userData) => {
     try {
       const response = await api.registerUser(userData);
+      if(response){
+        const userdata = await api.fetchCurrentUser();
+        setCurrentUser(userdata.data.user);
+        setIsLoggedIn(true)
+      }
       return response;
     } catch (error) {
       throw error;
@@ -72,8 +77,7 @@ export const AuthProvider = ({ children }) => {
   const loginUser = async (credentials) => {
     try {
       const response = await api.loginUser(credentials);
-      console.log(response)
-      if(response.message==="Successfully logged in"){
+      if(response){
         const userdata = await api.fetchCurrentUser();
         setCurrentUser(userdata.data.user);
         setIsLoggedIn(true)

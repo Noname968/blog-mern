@@ -34,8 +34,8 @@ router.post(
         publicId = data.public_id;
       } else {
         // If no image uploaded, use the default image URL
-        imageUrl = 'https://res.cloudinary.com/deaiyczro/image/upload/v1693223372/oe2tgbef87ux8afe5pty.jpg';
-        publicId = 'oe2tgbef87ux8afe5pty';
+        imageUrl = 'https://res.cloudinary.com/deaiyczro/image/upload/v1694195176/user-images/jej0207lewoavqudjfhm.jpg';
+        publicId = 'user-images/jej0207lewoavqudjfhm';
       }
 
       // Create a new post with the image URL
