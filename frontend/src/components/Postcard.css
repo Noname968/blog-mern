@@ -1,0 +1,137 @@
+.homeposts{
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.loadmorebtn{
+    background-color: rgb(18, 18, 18);
+    color: white;
+    width: 120px;
+    text-align: center;
+    margin:20px auto;
+    padding: 10px 0;
+    border-radius: 12px;
+}
+.myposts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 35px;
+    margin: 30px 10px;
+    align-items: center;
+    /* justify-content: center; */
+}
+.postcard-single{
+    width: 340px;
+    /* border: 1px solid black; */
+    height: 393px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+}
+.postcardimg{
+    position: relative;
+}
+.singlepimg{
+    width: 345px;
+    height: 205px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.line{
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1;
+    margin-bottom: 2px;
+    padding: 0.5px;
+}
+.saved{
+    fill: #3740ff;
+    stroke: white;
+    stroke-width: 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    margin-bottom: 1px;
+}
+.addtofav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    margin: 8px;
+    padding: 1px 5px 3px 5px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.bookmark span{
+    font-size: 14px;
+    margin: 3px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.bookmark:hover span{
+    display: inline;
+}
+.postcardtag{
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.postcardtitle{
+    font-family: 'Fira Sans', sans-serif;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1.1em;
+    line-height: 1.2;
+    margin-block: 0.5em 0.5em;
+    color: black;
+}
+.postcardtitle:hover{
+    text-decoration: underline;
+}
+.postcardcontent{
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    margin-block: 0.5em 0.5em;
+    line-height: 1.5;
+}
+.postcardcont{
+    display: flex;
+    flex-direction: column;
+}
+.postcarddate{
+    position: absolute;
+    bottom: 5px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+@media(max-width:1134px){
+    .homeposts{
+        max-width: 760px;
+    }
+    .myposts{
+        margin: 20px;
+    }
+}
+
+@media(max-width:760px){
+    .myposts{
+        justify-content: center;
+    }
+    .searchh1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .nofound{
+        text-align: center;
+    }
+}
