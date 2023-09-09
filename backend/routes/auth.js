@@ -87,9 +87,8 @@ router.post("/", async (req, res) => {
     // save the token to http-only cookie
     res.cookie("token", token, {
       httpOnly: true,
-      sameSite: "none",
-      secure: true,
-      // remove secure and samesite to lax
+      // sameSite: "none",
+      // secure: true,
   }).send({ message: "Successfully registered user" });
   } catch (err) {
     res.status(500).send(err);
@@ -128,8 +127,8 @@ router.post("/login", async (req, res) => {
     // send the token in a HTTP-only cookie
     const cookieOptions = {
       httpOnly: true,
-      sameSite: "none",
-      secure: true,
+      // sameSite: "none",
+      // secure: true,
     };
 
     if (rememberMe) {
@@ -222,12 +221,14 @@ router.get("/loggedIn", (req, res) => {
 
 // logout user
 router.get("/logout", (req, res) => {
-  res.cookie("token", "", {
-    httpOnly: true,
-    expires: new Date(0),
-    secure: true,
-    sameSite: "none",
-  }).send("logged out successfully");
+  // res.cookie("token", "", {
+  //   httpOnly: true,
+  //   expires: new Date(0),
+  //   secure: true,
+  //   sameSite: "none",
+  // }).send("logged out successfully");
+  res.clearCookie('token');
+  res.json({ success: true });
 });
 
 // Follow a user

@@ -103,7 +103,7 @@ function Register() {
           </div>
         </>
       )}
-      <section className="vh-100" style={{ margin: "0" }}>
+      <section className="" style={{ margin: "0",maxHeight:"90vh" }}>
         <div className="container h-75">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div

@@ -64,7 +64,7 @@ function Login() {
           </div>
         </>
       )}
-      <section className="vh-100">
+      <section className="vh-100" style={{maxHeight:"92vh"}}>
         <div className="container-fluid h-75">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-md-9 col-lg-4 col-xl-4">
