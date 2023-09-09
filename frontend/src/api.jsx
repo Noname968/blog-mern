@@ -56,6 +56,7 @@ export const loginUser = async (credentials) => {
 export const logoutUser = async () => {
   try {
     const response = await api.get('api/auth/logout');
+    console.log(response)
     if (response.status === 200) {
       return true;
     } else {

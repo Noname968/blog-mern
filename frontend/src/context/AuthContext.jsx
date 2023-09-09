@@ -8,10 +8,38 @@ export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
   const popularTags = [
-    'Technology', 'Travel', 'Food', 'Lifestyle',
-    'Fashion', 'Health', 'Fitness', 'Art',
-    'Music', 'Books', 'Movies', 'Photography',
-    'Design', 'Business', 'Finance', 'Education', 'Other'
+    "Technology",
+    "Sports",
+    "Music",
+    "Film",
+    "Books",
+    "Fashion",
+    "Photography",
+    "Gaming",
+    "Programming",
+    "Fitness",
+    "Cooking",
+    "Adventure",
+    "Data Science",
+    "Machine Learning",
+    "Artificial Intelligence",
+    "Economics",
+    "Social Media",
+    "Climate Change",
+    "Science Fiction",
+    "Nature",
+    "Animals",
+    "Science",
+    "Health",
+    "Productivity",
+    "Design",
+    "Travel",
+    "Food",
+    "Startup",
+    "Marketing",
+    "Education",
+    "Politics",
+    "Environment","Psychology","Business","Others",
   ];
   const [currentUser, setCurrentUser] = useState(undefined);
   const [isLoggedIn, setIsLoggedIn] = useState(undefined);
@@ -110,7 +138,7 @@ export const AuthProvider = ({ children }) => {
 const handleLogout = async () => {
   const success = await api.logoutUser();
   if (success) {
-    setIsLoggedIn(false);
+    setIsLoggedIn(undefined);
     setCurrentUser(undefined);
   } else {
     throw error;
