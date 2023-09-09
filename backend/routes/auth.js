@@ -86,7 +86,7 @@ router.post("/", async (req, res) => {
 
     // save the token to http-only cookie
     res.cookie("token", token, {
-      httpOnly: true,
+      // httpOnly: true,
       // sameSite: "none",
       // secure: true,
   }).send({ message: "Successfully registered user" });
@@ -126,7 +126,7 @@ router.post("/login", async (req, res) => {
 
     // send the token in a HTTP-only cookie
     const cookieOptions = {
-      httpOnly: true,
+      // httpOnly: true,
       // sameSite: "none",
       // secure: true,
     };
