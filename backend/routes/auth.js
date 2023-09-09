@@ -90,7 +90,7 @@ router.post("/", async (req, res) => {
       sameSite: "none",
       secure: true,
       // remove secure and samesite to lax
-  }).send();
+  }).send({ message: "Successfully registered user" });
   } catch (err) {
     res.status(500).send(err);
   }
