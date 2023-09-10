@@ -290,7 +290,7 @@ router.post("/forgot/password", async (req, res) => {
       pass: process.env.SMTP_API_KEY,
     },
   });
-  const resetLink = `http://localhost:3000/resetpass/${token}/${user._id}`;
+  const resetLink = `https://blog-mernfrontend.vercel.app/resetpass/${token}/${user._id}`;
 
   const mailOptions = {
     from: "mernblog@gmail.com",

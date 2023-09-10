@@ -148,6 +148,9 @@
     .postcimg{
         max-width: 500px;
     }
+    .post-title{
+        font-size: 32px;
+    }
 }
 @media(max-width:530px){
     .postcimg{
