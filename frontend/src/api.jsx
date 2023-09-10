@@ -1,7 +1,8 @@
 import axios from "axios";
 
 // const baseURL = "http://localhost:5000";
-const baseURL = "https://blog-mernbackend.vercel.app";
+// const baseURL = "https://blog-mernbackend.vercel.app";
+const baseURL = "https://blog-mern-backend.cyclic.cloud"
 
 const api = axios.create({
   baseURL,
