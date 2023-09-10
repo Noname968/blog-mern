@@ -221,14 +221,14 @@ router.get("/loggedIn", (req, res) => {
 
 // logout user
 router.get("/logout", (req, res) => {
-  // res.cookie("token", "", {
-  //   httpOnly: true,
-  //   expires: new Date(0),
-  //   secure: true,
-  //   sameSite: "none",
-  // }).send("logged out successfully");
-  res.clearCookie('token');
-  res.json({ success: true });
+  res.cookie("token", "", {
+    httpOnly: true,
+    expires: new Date(0),
+    secure: true,
+    sameSite: "none",
+  }).send("logged out successfully");
+  // res.clearCookie('token');
+  // res.json({ success: true });
 });
 
 // Follow a user
