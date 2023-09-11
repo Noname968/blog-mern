@@ -18,7 +18,7 @@ function Homepage() {
   };
 
   if (!latestPosts) {
-    return <Loader message={"Fetching latest posts"} />
+    return <Loader message={"Fetching data..."} />
   }
 
   return (

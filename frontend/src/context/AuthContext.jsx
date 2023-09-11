@@ -43,8 +43,8 @@ export const AuthProvider = ({ children }) => {
   ];
   const [currentUser, setCurrentUser] = useState(undefined);
   const [isLoggedIn, setIsLoggedIn] = useState(undefined);
-  const [latestPosts, setLatestPosts] = useState([]);
-  const [favposts, setfavposts] = useState([]);
+  const [latestPosts, setLatestPosts] = useState(undefined);
+  const [favposts, setfavposts] = useState(undefined);
 
   // Edit a post
   const editPost = async (postId, updatedData) => {
