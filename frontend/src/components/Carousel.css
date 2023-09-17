@@ -25,6 +25,7 @@
   justify-content: center;
   height: 350px;
   width: 390px; /* Set a maximum width for the container */
+  overflow: hidden;
 }
 
 .carousel-image {
@@ -133,6 +134,10 @@
     height: 360px;
     width: 100%;
   }
+  .carousel-image{
+    width: 100%;
+
+  }
   
   .carousel-right {
     margin: 15px 0 0 0;
@@ -146,6 +151,9 @@
 
   .posttitle {
     font-size: 30px;
+  }
+  .carousel-image{
+    width: 100%;
   }
 }
 
