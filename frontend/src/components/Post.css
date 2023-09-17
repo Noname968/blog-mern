@@ -112,7 +112,8 @@
 .posttags{
     display: flex;
     border-bottom: 1px solid rgb(237, 237, 237);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    flex-wrap: wrap;
 }
 .tooltip{
     padding: 5px 8px !important;

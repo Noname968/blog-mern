@@ -30,7 +30,7 @@
 
 .carousel-image {
   width: 90%; /* Ensure the image always occupies the width of the container */
-  max-height: 320px;
+  height: 320px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -136,7 +136,7 @@
   }
   .carousel-image{
     width: 100%;
-
+    height: auto;
   }
   
   .carousel-right {
